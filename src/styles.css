@@ -30,11 +30,12 @@ body {
   overflow-x: hidden;
 }
 
-body::before {
-  content: "";
+.bg-watermark {
   position: fixed;
   inset: 0;
-  background: url("/logo-vs.jpeg") center 55% / min(42vw, 520px) no-repeat;
+  background-position: center 55%;
+  background-repeat: no-repeat;
+  background-size: min(42vw, 520px);
   opacity: 0.06;
   pointer-events: none;
   z-index: -2;

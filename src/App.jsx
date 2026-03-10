@@ -30,15 +30,26 @@ const roadmap = [
 ];
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <>
+      <div
+        className="bg-watermark"
+        style={{ backgroundImage: `url(${baseUrl}logo-vs.jpeg)` }}
+        aria-hidden="true"
+      />
       <div className="bg-orb orb-top" />
       <div className="bg-orb orb-bottom" />
 
       <header className="site-header">
         <div className="container nav-wrap">
           <div className="brand">
-            <img className="brand-logo" src="/logo-valtrix.jpeg" alt="Logotipo da Valtrix Systems" />
+            <img
+              className="brand-logo"
+              src={`${baseUrl}logo-valtrix.jpeg`}
+              alt="Logotipo da Valtrix Systems"
+            />
             <span>Valtrix Systems</span>
           </div>
           <a className="cta-outline" href="#contato">
