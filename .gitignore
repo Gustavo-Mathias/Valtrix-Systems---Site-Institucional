@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.npm-cache/
+.npm-global/
+.vite/
+.idea/workspace.xml
+*.log
+.idea/
