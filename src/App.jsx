@@ -36,7 +36,7 @@ function App() {
     <>
       <div
         className="bg-watermark"
-        style={{ backgroundImage: `url(${baseUrl}logo-vs.jpeg)` }}
+        style={{ backgroundImage: `url(${baseUrl}marca-agua.jpeg)` }}
         aria-hidden="true"
       />
       <div className="bg-orb orb-top" />
